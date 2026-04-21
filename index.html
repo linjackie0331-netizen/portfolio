@@ -3,114 +3,296 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<meta name="description" content="Jackie Lin 林子宥 — Brand Marketing Portfolio"/>
-<title>Jackie Lin 林子宥 — Portfolio</title>
+<meta name="description" content="Jackie Lin 林子宥 — Brand Marketing Portfolio | Healthcare &amp; FMCG | Taiwan &amp; APAC"/>
+<title>Jackie Lin 林子宥 — Brand Marketing Portfolio 2026</title>
 <style>
 :root{
-  --navy:#1A3D6B;--navy-dark:#0F2A50;--navy-light:#D0E3F0;
-  --bg:#F6F4F0;--card:#FFFFFF;--text:#2D2D2D;--muted:#6B7280;
-  --f:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --I:#1A3D6B;--ID:#0F2A50;--S:#2B5F8C;--SL:#D0E3F0;
+  --M:#F6F4F0;--MD:#E8E5E0;--B:#2D2D2D;--G:#6B7280;
+  --R:rgba(43,95,140,.13);--f:"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-html{scroll-behavior:smooth;}
-body{font-family:var(--f);background:var(--bg);color:var(--text);line-height:1.7;font-size:15px;}
+html{scroll-behavior:smooth;zoom:0.9;}
+body{font-family:var(--f);background:var(--M);color:var(--B);overflow-x:hidden;line-height:1.7;font-size:15px;}
 
+/* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;height:52px;
     display:flex;align-items:center;justify-content:space-between;
-    padding:0 48px;background:rgba(246,244,240,.96);
-    backdrop-filter:blur(14px);border-bottom:1px solid rgba(43,95,140,.12);}
-.nav-name{font-size:.93rem;font-weight:700;color:var(--navy);}
-.nav-sub{font-size:.67rem;color:var(--muted);letter-spacing:.04em;margin-left:10px;}
-.nav-links{display:flex;gap:20px;align-items:center;}
-.nav-links a{font-size:.67rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
-             color:var(--muted);text-decoration:none;transition:color .2s;}
-.nav-links a:hover{color:var(--navy);}
+    padding:0 52px;background:rgba(246,244,240,.95);
+    backdrop-filter:blur(14px);border-bottom:1px solid var(--R);}
+.nav-id{display:flex;align-items:baseline;gap:10px;}
+.nn{font-size:.95rem;font-weight:700;color:var(--I);}
+.nr{font-size:.68rem;color:var(--G);letter-spacing:.04em;}
+.nav-links{display:flex;gap:28px;}
+.nav-links a{font-size:.68rem;font-weight:700;letter-spacing:.1em;
+             text-transform:uppercase;color:var(--G);transition:color .2s;text-decoration:none;}
+.nav-links a:hover{color:var(--I);}
+.nav-btn{padding:6px 16px;background:var(--I);color:#fff;border-radius:2px;
+         font-size:.68rem;font-weight:700;letter-spacing:.08em;
+         text-transform:uppercase;cursor:pointer;transition:background .2s;text-decoration:none;}
+.nav-btn:hover{background:var(--S);}
 
-.hero{margin-top:52px;padding:72px 48px 48px;border-bottom:1px solid var(--navy-light);}
-.hero-tag{font-size:.67rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;
-          color:var(--navy);margin-bottom:16px;}
-.hero h1{font-size:2.4rem;font-weight:700;color:var(--navy-dark);line-height:1.2;margin-bottom:12px;}
-.hero p{font-size:.95rem;color:var(--muted);max-width:540px;}
+/* HERO */
+#hero{min-height:100vh;padding:108px 52px 70px;background:var(--I);
+      display:grid;grid-template-columns:1fr 340px;gap:68px;
+      align-items:center;position:relative;overflow:hidden;}
+#hero::before{content:"";position:absolute;top:0;right:0;width:40%;height:100%;
+  background:linear-gradient(155deg,var(--ID) 0%,transparent 100%);
+  clip-path:polygon(10% 0,100% 0,100% 100%,0 100%);opacity:.5;pointer-events:none;}
+#hero::after{content:"";position:absolute;bottom:-1px;left:0;right:0;height:54px;
+  background:var(--M);clip-path:polygon(0 100%,100% 100%,100% 25%,0 100%);}
+.hl{position:relative;z-index:1;}
+.eye{display:inline-block;font-size:.66rem;font-weight:700;letter-spacing:.14em;
+     text-transform:uppercase;color:var(--SL);margin-bottom:16px;}
+.eye::before{content:"-- ";}
+.hn{font-size:clamp(2.6rem,4.6vw,4.3rem);font-weight:700;color:#fff;
+    line-height:1.05;margin-bottom:4px;letter-spacing:-.02em;}
+.hzh{display:block;font-size:clamp(1.2rem,1.9vw,1.75rem);color:var(--SL);font-weight:400;}
+.hdesc{font-size:.88rem;color:rgba(255,255,255,.54);line-height:1.74;
+       max-width:430px;margin:18px 0 28px;}
+.hbtns{display:flex;gap:10px;flex-wrap:wrap;}
+.bp{padding:10px 22px;background:var(--S);color:#fff;font-weight:700;
+    font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;
+    border-radius:2px;cursor:pointer;transition:background .2s;display:inline-block;text-decoration:none;}
+.bp:hover{background:#3474a8;}
+.bg{padding:10px 22px;border:1px solid rgba(255,255,255,.22);
+    color:rgba(255,255,255,.7);font-size:.74rem;font-weight:700;
+    letter-spacing:.07em;text-transform:uppercase;border-radius:2px;
+    cursor:pointer;transition:all .2s;display:inline-block;text-decoration:none;}
+.bg:hover{border-color:rgba(255,255,255,.5);color:#fff;}
+.hkpis{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.kpi{padding:18px 15px;background:rgba(255,255,255,.05);
+     border:1px solid rgba(208,227,240,.14);border-radius:2px;transition:border-color .25s;}
+.kpi:hover{border-color:rgba(208,227,240,.35);}
+.kn{font-size:2.2rem;font-weight:700;color:var(--SL);line-height:1;letter-spacing:-.02em;}
+.kl{font-size:.61rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+    color:rgba(255,255,255,.35);margin-top:6px;line-height:1.4;}
 
-.section{padding:48px 48px 72px;}
-.section-label{font-size:.67rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;
-               color:var(--navy);margin-bottom:32px;padding-bottom:10px;
-               border-bottom:2px solid var(--navy);}
+/* SECTIONS */
+.sec{padding:76px 52px;}
+.si{max-width:1100px;margin:0 auto;}
+.se{display:block;font-size:.65rem;font-weight:700;letter-spacing:.14em;
+    text-transform:uppercase;color:var(--S);margin-bottom:9px;}
+.st{font-size:clamp(1.72rem,2.5vw,2.35rem);font-weight:700;color:var(--I);
+    line-height:1.12;margin-bottom:44px;letter-spacing:-.01em;}
+.sr{width:36px;height:3px;background:var(--S);margin-top:12px;}
+.dark .se{color:var(--SL);} .dark .st{color:#fff;} .dark .sr{background:var(--SL);}
+.kw{font-weight:700;color:var(--I);}
 
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:24px;}
+/* PROFILE */
+.wg{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--R);border-radius:3px;overflow:hidden;}
+.wc{padding:34px 30px;}
+.wc+.wc{border-left:1px solid var(--R);}
+.wcl{font-size:.61rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+     color:var(--S);margin-bottom:16px;display:block;}
+.wu{list-style:none;}
+.wu li{display:block;margin-bottom:13px;font-size:.87rem;line-height:1.64;
+       color:var(--B);padding-left:1.2em;position:relative;}
+.wu li::before{content:"--";color:var(--S);font-weight:700;position:absolute;left:0;top:0;}
 
-.card{background:var(--card);border:1px solid var(--navy-light);border-radius:4px;
-      padding:28px;text-decoration:none;color:inherit;transition:box-shadow .2s,transform .2s;
-      display:flex;flex-direction:column;gap:8px;}
-.card:hover{box-shadow:0 6px 24px rgba(26,61,107,.12);transform:translateY(-2px);}
-.card-company{font-size:.67rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
-              color:var(--navy);}
-.card-role{font-size:1rem;font-weight:700;color:var(--text);}
-.card-date{font-size:.72rem;color:var(--muted);}
-.card-arrow{margin-top:auto;padding-top:16px;font-size:.72rem;font-weight:700;
-            letter-spacing:.08em;text-transform:uppercase;color:var(--navy);}
+/* PORTFOLIO GRID */
+.pg{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:15px;}
+.pcard{background:#fff;border:1px solid var(--R);border-radius:3px;
+       padding:22px 20px;text-decoration:none;color:inherit;
+       position:relative;transition:border-color .2s,background .2s;display:block;}
+.pcard:hover{border-color:var(--S);background:#f5f9fd;}
+.pcard-bar{position:absolute;top:0;left:0;right:0;height:3px;background:var(--S);}
+.pcard-co{font-size:.61rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+          color:var(--S);margin-bottom:6px;}
+.pcard-role{font-size:.95rem;font-weight:700;color:var(--I);margin-bottom:10px;line-height:1.3;}
+.pcard-date{font-size:.7rem;color:var(--G);}
+.pcard-arrow{margin-top:16px;font-size:.68rem;font-weight:700;letter-spacing:.08em;
+             text-transform:uppercase;color:var(--S);}
+.empty-msg{font-size:.87rem;color:var(--G);padding:32px 0;}
 
-.empty{color:var(--muted);font-size:.9rem;padding:24px 0;}
+/* EXPERTISE */
+.eg{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:rgba(208,227,240,.07);}
+.ec{padding:23px 17px;background:var(--I);cursor:default;transition:background .2s;}
+.ec:hover{background:var(--S);}
+.en{font-size:.6rem;font-weight:700;letter-spacing:.1em;color:var(--SL);margin-bottom:7px;}
+.ec:hover .en{color:#fff;}
+.et{font-size:.9rem;font-weight:700;color:#fff;margin-bottom:5px;line-height:1.27;}
+.ed{font-size:.74rem;color:rgba(255,255,255,.38);line-height:1.52;}
+.ec:hover .ed{color:rgba(255,255,255,.74);}
 
-footer{padding:32px 48px;border-top:1px solid var(--navy-light);
-       font-size:.72rem;color:var(--muted);display:flex;justify-content:space-between;align-items:center;}
-footer a{color:var(--navy);text-decoration:none;}
+/* CTA */
+#cta .st{color:#fff;margin-bottom:13px;}
+.csub{font-size:.88rem;color:rgba(255,255,255,.5);max-width:490px;margin:0 auto 30px;line-height:1.74;}
+.cbtns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+.bo{padding:10px 22px;border:1px solid rgba(255,255,255,.22);color:rgba(255,255,255,.68);
+    font-size:.74rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+    border-radius:2px;transition:all .2s;display:inline-block;cursor:pointer;text-decoration:none;}
+.bo:hover{border-color:rgba(255,255,255,.5);color:#fff;}
 
-@media(max-width:600px){
-  nav,hero,.section,footer{padding-left:20px;padding-right:20px;}
-  .hero h1{font-size:1.6rem;}
+/* RESPONSIVE */
+@media(max-width:960px){
+  nav{padding:0 22px;}
+  .nav-links{display:none;}
+  .sec{padding:60px 26px;}
+  #hero{grid-template-columns:1fr;padding:92px 26px 50px;gap:30px;min-height:auto;}
+  #hero::after{display:none;}
+  .hkpis{grid-template-columns:1fr 1fr;}
+  .wg{grid-template-columns:1fr;}
+  .wc+.wc{border-left:none;border-top:1px solid var(--R);}
+  .eg{grid-template-columns:repeat(2,1fr);}
+  .st{margin-bottom:30px;}
 }
+@media(max-width:500px){
+  nav{padding:0 14px;}
+  .nav-btn{display:none;}
+  .sec{padding:50px 15px;}
+  #hero{padding:84px 15px 42px;}
+  .hbtns{flex-direction:column;}
+  .bp,.bg{text-align:center;padding:11px 14px;}
+  .kpi{padding:12px 9px;}
+  .kn{font-size:1.55rem;}
+  .eg{grid-template-columns:1fr 1fr;gap:2px;}
+  .st{font-size:clamp(1.42rem,5.5vw,1.85rem);margin-bottom:22px;}
+  .cbtns{flex-direction:column;align-items:stretch;}
+  .cbtns a{text-align:center;}
+}
+@media(max-width:360px){.eg{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
 
+<!-- NAV -->
 <nav>
-  <div style="display:flex;align-items:baseline;">
-    <span class="nav-name">Jackie Lin 林子宥</span>
-    <span class="nav-sub">Brand Marketing</span>
+  <div class="nav-id">
+    <span class="nn">Jackie Lin &#26519;&#23376;&#23461;</span>
+    <span class="nr">Brand Marketing</span>
   </div>
   <div class="nav-links">
-    <a href="https://www.linkedin.com/in/jackielin0331" target="_blank">LinkedIn</a>
+    <a href="#profile">Profile</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#cta">Contact</a>
   </div>
+  <a href="#cta" class="nav-btn" id="nav-email">Get in Touch</a>
 </nav>
 
-<div class="hero">
-  <div class="hero-tag">Portfolio</div>
-  <h1>Brand Marketing<br>Case Studies</h1>
-  <p>Healthcare &amp; FMCG brand marketing across Taiwan and Asia-Pacific markets. 14+ years building brands that connect science to patients.</p>
-</div>
-
-<div class="section">
-  <div class="section-label">Selected Work</div>
-  <div class="grid" id="portfolio-grid">
-    <!-- cards injected by sync_portfolio.sh via portfolios.json -->
+<!-- HERO -->
+<section id="hero">
+  <div class="hl">
+    <span class="eye">Brand Marketing Portfolio &middot; Healthcare &amp; FMCG &middot; 2026</span>
+    <h1 class="hn">Jackie Lin<span class="hzh">&#26519;&#23376;&#23461;</span></h1>
+    <p class="hdesc">14+ years building premium brands across Taiwan and APAC. A&amp;P budget ownership (ATL/BTL), product launches, PR activations, and KOL strategy for international healthcare and FMCG brands. Iowa State University MBA &middot; TOEFL 103 &middot; TOEIC Gold.</p>
+    <div class="hbtns">
+      <a href="#portfolio" class="bp">View Portfolio</a>
+      <a href="#" class="bg" id="hero-email">lin.jackie0331&#64;gmail.com</a>
+    </div>
   </div>
-  <p class="empty" id="empty-msg" style="display:none;">No portfolios published yet.</p>
-</div>
+  <div class="hkpis">
+    <div class="kpi"><div class="kn">NT$20M<sup style="font-size:1.1rem">+</sup></div><div class="kl">A&amp;P Budget<br/>Ownership</div></div>
+    <div class="kpi"><div class="kn">ROAS<br/>24</div><div class="kl">Peak ATL/BTL<br/>Campaign Result</div></div>
+    <div class="kpi"><div class="kn">14<sup style="font-size:1.1rem">yr</sup></div><div class="kl">Brand Marketing<br/>Experience</div></div>
+    <div class="kpi"><div class="kn">5+</div><div class="kl">International<br/>Premium Brands</div></div>
+  </div>
+</section>
 
-<footer>
-  <span>Jackie Lin 林子宥 · Brand Marketing Portfolio</span>
-  <a href="https://www.linkedin.com/in/jackielin0331" target="_blank">LinkedIn →</a>
-</footer>
+<!-- PROFILE -->
+<section id="profile" class="sec" style="background:#fff">
+  <div class="si">
+    <span class="se">About</span>
+    <h2 class="st">Brand builder with a North Asia mindset.</h2>
+    <div class="sr" style="margin-bottom:34px"></div>
+    <div class="wg">
+      <div class="wc">
+        <span class="wcl">Brand Marketing Track Record</span>
+        <ul class="wu">
+          <li>14+ years of <span class="kw">brand management</span> — owning local brand strategy, developing annual Brand Plans, and translating global brand strategy to Taiwan markets across healthcare and premium FMCG.</li>
+          <li>Full <span class="kw">A&amp;P budget ownership</span> (NT$20M+ ATL/BTL) with quarterly financial tracking; KPI and ROI monitoring at every spend decision; A&amp;P held &le;15% of revenue across multi-brand portfolio.</li>
+          <li>Hands-on <span class="kw">ATL activations</span>, product launches, and PR activations — directing 4A PR firms; NT$4M+ earned media; ROAS 24 peak campaign result.</li>
+          <li>Built and managed <span class="kw">400+ KOL ecosystem</span> (100K–2.5M followers); 85–122% engagement rate, 50+ ppts above EU HQ benchmark; results reviewed by APAC HQ.</li>
+        </ul>
+      </div>
+      <div class="wc">
+        <span class="wcl">Differentiating Strengths</span>
+        <ul class="wu">
+          <li><span class="kw">Healthcare brand expertise</span>: MSD, NovoNordisk, DuPont — HCP-facing and patient-centric marketing in regulated environments; medical conference strategy and scientific communication.</li>
+          <li><span class="kw">Premium FMCG credentials</span>: iRobot, SteamOne, Sp&auml;rkel, Venchi — luxury consumer goods, ATL/BTL campaigns, VIP programmes, and international brand standards.</li>
+          <li>AI-augmented workflow: Claude, ChatGPT, Perplexity, NotebookLM, Gemini Suite embedded for consumer intelligence, agency briefs, and competitive analysis.</li>
+          <li>MBA Iowa State University &middot; TOEFL 103 &middot; TOEIC Gold &middot; 34+ professional certifications &middot; Mandarin native, English fluent.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="sec" style="background:var(--M)">
+  <div class="si">
+    <span class="se">Case Studies</span>
+    <h2 class="st">The brand work, in detail.</h2>
+    <div class="sr" style="margin-bottom:38px"></div>
+    <div class="pg" id="portfolio-grid"></div>
+    <p class="empty-msg" id="empty-msg" style="display:none">Portfolio case studies coming soon.</p>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section id="expertise" class="sec dark" style="background:var(--I)">
+  <div class="si">
+    <span class="se">Core Competencies</span>
+    <h2 class="st">What I bring to every brand.</h2>
+    <div class="sr" style="margin-bottom:34px"></div>
+    <div class="eg">
+      <div class="ec"><div class="en">01</div><div class="et">Brand Strategy &amp; Planning</div><div class="ed">Local brand strategy, annual Brand Plans, brand building programs, product pipeline, brand equity &amp; positioning</div></div>
+      <div class="ec"><div class="en">02</div><div class="et">A&amp;P Budget Ownership</div><div class="ed">NT$20M+ ATL/BTL budget; quarterly financial tracking; KPI setting; ROI monitoring; agile A&amp;P reallocation</div></div>
+      <div class="ec"><div class="en">03</div><div class="et">ATL Activations &amp; Product Launches</div><div class="ed">Comprehensive marketing materials; event management; advertising &amp; promotion; brand guardian at consumer events</div></div>
+      <div class="ec"><div class="en">04</div><div class="et">PR &amp; Agency Management</div><div class="ed">4A PR firm direction; NT$4M+ earned media; external agency management; press and KOL relationships</div></div>
+      <div class="ec"><div class="en">05</div><div class="et">Healthcare Marketing</div><div class="ed">HCP engagement, patient-centric campaigns, medical congress strategy, scientific communication, regulatory-compliant content</div></div>
+      <div class="ec"><div class="en">06</div><div class="et">KOL &amp; Digital Platforms</div><div class="ed">400+ KOL ecosystem (100K–2.5M followers); digital platform strategy; LINE/Meta/IG; 85–122% engagement rate</div></div>
+      <div class="ec"><div class="en">07</div><div class="et">Consumer Intelligence</div><div class="ed">Market research, competitive landscape, field visits, qualitative trade feedback — all informing brand plans</div></div>
+      <div class="ec"><div class="en">08</div><div class="et">North Asia Stakeholder Management</div><div class="ed">US/EU/JP/APAC HQ liaison; multi-market alignment; cross-functional team leadership; 530-person event management</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta" class="sec dark" style="background:var(--ID);text-align:center">
+  <div class="si">
+    <span class="se">Let&rsquo;s connect</span>
+    <h2 class="st">Ready to build your brand in Taiwan and APAC.</h2>
+    <p class="csub">14+ years of brand strategy, A&amp;P ownership, and ATL activation for international healthcare and premium FMCG brands. One conversation to explore the fit.</p>
+    <div class="cbtns">
+      <a href="#" class="bp" id="cta-email">lin.jackie0331&#64;gmail.com</a>
+      <a href="https://www.linkedin.com/in/jackielin0331/" target="_blank" rel="noopener" class="bo">LinkedIn Profile</a>
+    </div>
+    <p style="margin-top:26px;font-size:.74rem;color:rgba(255,255,255,.28)">+886-983-471-619 &middot; Taipei, Taiwan &middot; Available upon discussion</p>
+  </div>
+</section>
 
 <script>
-fetch('portfolios.json')
-  .then(r => r.ok ? r.json() : [])
-  .then(portfolios => {
-    const grid = document.getElementById('portfolio-grid');
-    const empty = document.getElementById('empty-msg');
-    if (!portfolios.length) { empty.style.display = 'block'; return; }
-    portfolios.forEach(p => {
-      grid.innerHTML += `
-        <a class="card" href="${p.slug}/">
-          <div class="card-company">${p.company}</div>
-          <div class="card-role">${p.role}</div>
-          <div class="card-date">${p.date}</div>
-          <div class="card-arrow">View Case Study →</div>
-        </a>`;
-    });
-  })
-  .catch(() => { document.getElementById('empty-msg').style.display = 'block'; });
+(function(){
+  var e = 'lin' + '.jackie' + '0331' + '@' + 'gmail' + '.com';
+  var m = 'mai' + 'lto:' + e;
+  ['hero-email','nav-email','cta-email'].forEach(function(id){
+    var el = document.getElementById(id);
+    if(el){ el.href = m; }
+  });
+
+  fetch('portfolios.json')
+    .then(function(r){ return r.ok ? r.json() : []; })
+    .then(function(list){
+      var grid = document.getElementById('portfolio-grid');
+      var empty = document.getElementById('empty-msg');
+      if(!list || !list.length){ empty.style.display='block'; return; }
+      list.forEach(function(p){
+        var a = document.createElement('a');
+        a.className = 'pcard';
+        a.href = p.slug + '/';
+        a.innerHTML =
+          '<div class="pcard-bar"></div>' +
+          '<div class="pcard-co">' + p.company + '</div>' +
+          '<div class="pcard-role">' + p.role + '</div>' +
+          '<div class="pcard-date">' + p.date + '</div>' +
+          '<div class="pcard-arrow">View Case Study &rarr;</div>';
+        grid.appendChild(a);
+      });
+    })
+    .catch(function(){ document.getElementById('empty-msg').style.display='block'; });
+})();
 </script>
 
 </body>
