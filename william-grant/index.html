@@ -3,18 +3,18 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<meta name="description" content="Jackie Lin Portfolio — Mktg Mgr Candidate | William Grant & Sons 2026"/>
-<title>Jackie Lin &#26519;&#23376;&#23461; &ndash; Mktg Mgr Portfolio | William Grant & Sons 2026</title>
+<meta name="description" content="Jackie Lin Portfolio — Mktg Mgr_ E Candidate | William Grant & Sons 2026"/>
+<title>Jackie Lin &#26519;&#23376;&#23461; &ndash; Mktg Mgr_ E Portfolio | William Grant & Sons 2026</title>
 <style>
 :root{--I:#1A365D;--ID:#0F2240;--S:#2B5F8C;--SL:#D0E3F0;--M:#F6F4F0;--MD:#E8E5E0;--B:#2D2D2D;--G:#6B7280;--R:rgba(43,95,140,.13);--f:"Helvetica Neue",Helvetica,Arial,sans-serif;}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-html{scroll-behavior:smooth;}
-body{font-family:var(--f);background:var(--M);color:var(--B);overflow-x:hidden;line-height:1.75;font-size:17px;word-break:break-word;overflow-wrap:break-word;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;min-width:0;}
+html{scroll-behavior:smooth;overflow-x:hidden;max-width:100%;}
+body{font-family:var(--f);background:var(--M);color:var(--B);overflow-x:hidden;line-height:1.75;font-size:17px;word-break:break-word;overflow-wrap:break-word;max-width:100%;}
 nav{position:fixed;top:0;left:0;right:0;z-index:100;height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 52px;background:rgba(246,244,240,.95);backdrop-filter:blur(14px);border-bottom:1px solid var(--R);}
-.nav-id{display:flex;align-items:baseline;gap:10px;}
+.nav-id{display:flex;align-items:baseline;gap:10px;flex-shrink:0;}
 .nn{font-size:1rem;font-weight:700;color:var(--I);}
 .nr{font-size:.75rem;color:var(--G);letter-spacing:.04em;}
-.nav-links{display:flex;gap:28px;}
+.nav-links{display:flex;gap:28px;flex-shrink:1;overflow:hidden;}
 .nav-links a{font-size:.75rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--G);transition:color .2s;text-decoration:none;}
 .nav-links a:hover{color:var(--I);}
 .nav-btn{padding:6px 16px;background:var(--I);color:#fff;border-radius:2px;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;transition:background .2s;text-decoration:none;}
@@ -28,7 +28,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:52px;display:flex;ali
 .hn{font-size:clamp(2.6rem,4.6vw,4.3rem);font-weight:700;color:#fff;line-height:1.05;margin-bottom:4px;letter-spacing:-.02em;}
 .hzh{display:block;font-size:clamp(1.2rem,1.9vw,1.75rem);color:var(--SL);font-weight:400;}
 .hdesc{font-size:.97rem;color:rgba(255,255,255,.54);line-height:1.78;max-width:430px;margin:18px 0 28px;}
-.hbtns{display:flex;gap:8px;flex-wrap:nowrap;}
+.hbtns{display:flex;gap:8px;flex-wrap:wrap;}
 .bp{padding:9px 16px;background:var(--S);color:#fff;font-weight:700;font-size:.76rem;letter-spacing:.07em;text-transform:uppercase;border-radius:2px;transition:background .2s;display:inline-block;text-decoration:none;white-space:nowrap;}
 .bp:hover{background:#3474a8;}
 .bg{padding:9px 16px;border:1px solid rgba(255,255,255,.22);color:rgba(255,255,255,.7);font-size:.76rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;border-radius:2px;transition:all .2s;display:inline-block;text-decoration:none;white-space:nowrap;}
@@ -80,8 +80,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:52px;display:flex;ali
 .cbtns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
 .bo{padding:11px 24px;border:1px solid rgba(255,255,255,.22);color:rgba(255,255,255,.68);font-size:.82rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;border-radius:2px;transition:all .2s;display:inline-block;text-decoration:none;}
 .bo:hover{border-color:rgba(255,255,255,.5);color:#fff;}
-@media(max-width:960px){nav{padding:0 22px;}.nav-links{display:none;}.sec{padding:60px 26px;}#hero{grid-template-columns:1fr;padding:92px 26px 50px;gap:30px;min-height:auto;}#hero::after{display:none;}.hkpis{grid-template-columns:1fr 1fr;}.wg{grid-template-columns:1fr;}.wc+.wc{border-left:none;border-top:1px solid var(--R);}.cg{grid-template-columns:1fr 1fr;gap:12px;}.eg{grid-template-columns:repeat(2,1fr);}.tkg{grid-template-columns:1fr;gap:20px;}.st{margin-bottom:30px;}}
-@media(max-width:500px){nav{padding:0 14px;}.nav-btn{display:none;}.sec{padding:50px 15px;}#hero{padding:84px 15px 42px;}.hbtns{flex-direction:column;}.bp,.bg,.bo{text-align:center;padding:11px 14px;}.kpi{padding:12px 9px;}.kn{font-size:1.55rem;}.cg{grid-template-columns:1fr;}.eg{grid-template-columns:1fr 1fr;gap:2px;}.st{font-size:clamp(1.55rem,5.5vw,2rem);margin-bottom:22px;}.cbtns{flex-direction:column;align-items:stretch;}.cbtns a{text-align:center;}}
+@media(max-width:1100px){.nav-links{display:none;}}
+@media(max-width:960px){nav{padding:0 22px;}.sec{padding:60px 26px;}#hero{grid-template-columns:1fr;padding:92px 26px 50px;gap:30px;min-height:auto;}#hero::after{display:none;}.hkpis{grid-template-columns:1fr 1fr;}.wg{grid-template-columns:1fr;}.wc+.wc{border-left:none;border-top:1px solid var(--R);}.cg{grid-template-columns:1fr 1fr;gap:12px;}.eg{grid-template-columns:repeat(2,1fr);}.tkg{grid-template-columns:1fr;gap:20px;}.st{margin-bottom:30px;}#value-match .si{grid-template-columns:1fr!important;}#value-match .si>div:first-child{border-right:none!important;border-bottom:1px solid rgba(255,255,255,.25)!important;padding:40px 0!important;}#value-match .si>div:last-child{padding:40px 0!important;}}
+@media(max-width:500px){nav{padding:0 14px;}.nav-btn{display:none;}.sec{padding:50px 15px;}#hero{padding:84px 15px 42px;}.hbtns{flex-direction:column;}.bp,.bg,.bo{text-align:center;padding:11px 14px;}.kpi{padding:12px 9px;}.kn{font-size:1.55rem;}.cg{grid-template-columns:1fr;}.eg{grid-template-columns:1fr 1fr;gap:2px;}.st{font-size:clamp(1.55rem,5.5vw,2rem);margin-bottom:22px;}.cbtns{flex-direction:column;align-items:stretch;}.cbtns a{text-align:center;}#value-match{padding:0 15px!important;}}
 @media(max-width:360px){.eg{grid-template-columns:1fr;}}
 </style>
 </head>
@@ -91,7 +92,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:52px;display:flex;ali
 <nav>
   <div class="nav-id">
     <span class="nn">Jackie Lin &#26519;&#23376;&#23461;</span>
-    <span class="nr">Mktg Mgr &mdash; William Grant & Sons</span>
+    <span class="nr">Mktg Mgr_ E &mdash; William Grant & Sons</span>
   </div>
   <div class="nav-links">
     <a href="#why">Why Jackie</a>
@@ -106,7 +107,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:52px;display:flex;ali
 <!-- ═══ HERO ═══════════════════════════════════════════════════════════════ -->
 <section id="hero">
   <div class="hl">
-    <span class="eye">Mktg Mgr Portfolio &middot; William Grant & Sons &middot; 2026</span>
+    <span class="eye">Mktg Mgr_ E Portfolio &middot; William Grant & Sons &middot; 2026</span>
     <h1 class="hn">Jackie Lin<span class="hzh">&#26519;&#23376;&#23461;</span></h1>
     <p class="hdesc">14+ years of brand management, campaign strategy, and premium consumer goods expertise across APAC/EU markets. Iowa State University MBA &middot; TOEFL 103 &middot; TOEIC Gold.</p>
     <div class="hbtns">
@@ -118,7 +119,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:52px;display:flex;ali
   </div>
   <div class="hkpis">
     <div class="kpi"><div class="kn">NT$20M<sup style="font-size:1.1rem">+</sup></div><div class="kl">Annual A&amp;P<br/>Budget Managed</div></div>
-    <div class="kpi"><div class="kn">ROAS<br/>24</div><div class="kl">Peak Campaign<br/>Result</div></div>
+    <div class="kpi"><div class="kn">ROAS<br/>30</div><div class="kl">Peak Campaign<br/>Result</div></div>
     <div class="kpi"><div class="kn">14<sup style="font-size:1.1rem">yr</sup></div><div class="kl">Brand Marketing<br/>Experience</div></div>
     <div class="kpi"><div class="kn">400+</div><div class="kl">KOL Ecosystem<br/>Partners</div></div>
   </div>
@@ -128,26 +129,21 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:52px;display:flex;ali
 <section id="why" class="sec" style="background:#fff">
   <div class="si">
     <span class="se">Candidacy Brief</span>
-    <h2 class="st">Why Jackie is the right Mktg Mgr for William Grant & Sons.</h2>
+    <h2 class="st">Why Jackie is the right Mktg Mgr_ E for William Grant & Sons.</h2>
     <div class="sr" style="margin-bottom:34px"></div>
     <div class="wg">
       <div class="wc">
         <span class="wcl">Direct Qualification Match</span>
-        <ul class="wu">
-          <li>Reset the annual brand planning (IBP) cycle: moved from reactive promotions to a 12-month P&L framework built on global brand strategy alignment — allocated NT$20M+ A&P across digital strategy, KOL, and offline channels; reversed flat growth to 20%+ annual sales within 18 months while expanding brand equity across all product lines</li>
-          <li>Shifted KOL management from celebrity endorsements to 400+ micro-niche creators; built a performance-tiered system that cut CPV 70% YoY while sustaining digital advertising ROAS at 8x+ and CRM repurchase rate growth at 10%+</li>
-          <li>Negotiated Taiwan's first co-marketing alliance between premium consumer goods brands — 2-year B2B partnership with 老協珍 that combined advertising and promotion reach and new product development gifting to generate NT$15M+ in department store sales and 30% net-new customers</li>
-          <li>Led team of 5 direct reports with full people management and stakeholder management responsibility across cross-functional teams — HQ, agencies (agency management: PR, digital, creative), and channel partners; introduced quarterly brand plan reviews ensuring local execution met global standards</li>
-        </ul>
+        <p style="font-size:.95rem;line-height:1.8;color:var(--B)">14 years of annual brand planning, KOL management, and digital advertising across iRobot and four premium international brands — always accountable to US or EU brand principals, always equity-led over promotional. Repositioned multiple brands from reactive marketing to IBP-driven brand equity building, with NT$20M+ A&P and full cross-functional team leadership. The 2009 World Games and SK-II's NYC flagship reinforce a consistent pattern: premium brand authority is built through credibility, cross-functional discipline, and long-term consumer relationships — not promotional spend.</p>
       </div>
       <div class="wc">
         <span class="wcl">Differentiating Strengths</span>
         <ul class="wu">
-          <li><span class="kw">Annual brand planning (IBP)</span> aligned to <span class="kw">global brand strategy</span> — translated overseas HQ priorities into NT$20M+ A&P execution without missing a market-specific beat</li>
-          <li><span class="kw">KOL ecosystem</span> of 400+ creators with performance-tiered management; CPV −70% YoY; platform ROAS sustained at <span class="kw">8x+</span> — applied across iRobot, Spärkel, and Blueair simultaneously</li>
-          <li><span class="kw">B2B strategic alliance</span> expertise: negotiated Taiwan's first cross-premium-brand co-marketing deal (老協珍); NT$15M+ dept store channel sales, +30% net-new customers</li>
-          <li><span class="kw">Bilingual EN/ZH</span> HQ liaison — 10+ years interfacing with US and EU brand principals; Iowa State MBA; adept at translating brand guidelines into culturally resonant Taiwan campaigns</li>
-          <li>14+ years <span class="kw">premium brand continuity</span> — iRobot, Blueair, Spärkel, Stadler Form, SK-II (Macy's NYC flagship); brand repositioned from promotional-first to equity-driven in every role</li>
+          <li><span class="kw">Brand equity repositioning</span>: moved brand strategy from promotional-first to equity-driven IBP — brand sales +30%, sustained ROAS 8x+ on NT$20M+ A&P across 5 premium brands</li>
+          <li><span class="kw">400+ KOL management ecosystem</span> with performance-tiered structure; CPV −70% YoY; digital advertising ROAS 8x+ sustained across multiple premium lifestyle brands simultaneously</li>
+          <li><span class="kw">Luxury VIP program</span>: SK-II NYC Macy's — 450 VIP clients at NT$20K+ avg spend, NT$9M at 170% of quarterly target through consultative premium selling</li>
+          <li><span class="kw">Bilingual EN/ZH HQ liaison</span> — 14 years with US and EU brand principals; Iowa State MBA; translates global brand guidelines into locally resonant campaigns</li>
+          <li><span class="kw">International event marketing & government liaison</span>: 2009 World Games — Opening Ceremony sold out 2 months early; 530-person bilingual team; bridged government procurement and creative design</li>
         </ul>
       </div>
     </div>
@@ -163,28 +159,28 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:52px;display:flex;ali
     <div class="cg">
       
       <div class="case" tabindex="0"><div class="cb"></div>
-        <div class="cbr">iRobot × HCP Collaboration &middot; Disease Awareness Campaign &middot; 2020–2021</div>
-        <h3 class="ct">Brand sales +30% via HCP-driven disease awareness — ROAS 30 on Double 11</h3>
-        <div class="cl">Situation</div><p class="cp">Pandemic accelerated home hygiene awareness; needed credible HCP voices to validate iRobot as a health tool — not just a gadget.</p>
-        <div class="cl">Action</div><p class="cp">Recruited 16+ medical professionals for disease awareness campaigns; appointed 1 HCP brand ambassador; coordinated KOL ecosystem integration with consumer campaign calendar.</p>
+        <div class="cbr">iRobot Taiwan — Brand Repositioning &middot; Premium Credibility Strategy · HCP KOL &middot; 2020–2022</div>
+        <h3 class="ct">Repositioned iRobot from gadget to lifestyle essential — brand sales +30%, peak ROAS 30 on Double 11</h3>
+        <div class="cl">Situation</div><p class="cp">In a commoditizing market competing on price, iRobot needed a credibility position that no competitor could discount their way to — a challenge common to all premium brands.</p>
+        <div class="cl">Action</div><p class="cp">Shifted KOL strategy from tech reviewers to 16+ medical professionals; appointed one as 2022 brand ambassador; integrated HCP credibility into annual brand plan and seasonal campaign calendar.</p>
         <div class="cl">Result</div>
-        <div class="cr"><span class="res">Brand Sales +30%</span><span class="res">ROAS 30 — Double 11</span><span class="res">HCP Brand Ambassador</span></div>
+        <div class="cr"><span class="res">Brand Sales +30%</span><span class="res">Peak ROAS 30 — Double 11</span><span class="res">HCP Brand Ambassador Appointed</span></div>
       </div>
       <div class="case" tabindex="0"><div class="cb"></div>
-        <div class="cbr">iRobot Flagship Launch &middot; PR & Earned Media &middot; 2022</div>
-        <h3 class="ct">NT$4M+ earned media at 125% impression rate — 100K Day-1 views</h3>
-        <div class="cl">Situation</div><p class="cp">High-stakes flagship SKU launch requiring breakthrough earned media in a crowded robot vacuum market.</p>
-        <div class="cl">Action</div><p class="cp">Directed 4A PR agency end-to-end; ran KOC activation (100K Day-1 views); executed HSBC co-branded EDM to 750K cardholders (23% open rate, NT$1.2M direct sales).</p>
+        <div class="cbr">iRobot × HSBC Bank &middot; Premium Audience Co-Marketing · Consumer Development &middot; 2022</div>
+        <h3 class="ct">ROI +1,200% via premium cardholder co-marketing — 750K reached, EDM open rate +23% above category</h3>
+        <div class="cl">Situation</div><p class="cp">Needed to build a premium consumer base beyond mass digital channels; identified HSBC's high-net-worth cardholder segment as the right aspirational audience.</p>
+        <div class="cl">Action</div><p class="cp">Co-created exclusive bundle offer with personalized EDM to 750K premium cardholders; managed creative, CRM, and retail execution end-to-end.</p>
         <div class="cl">Result</div>
-        <div class="cr"><span class="res">NT$4M+ Earned Media</span><span class="res">125% Impression Rate</span><span class="res">NT$1.2M Direct Sales</span></div>
+        <div class="cr"><span class="res">ROI +1,200%</span><span class="res">EDM Open Rate +23% Above Category</span><span class="res">NT$1.2M Direct Sales</span></div>
       </div>
       <div class="case" tabindex="0"><div class="cb"></div>
-        <div class="cbr">Highspeed Digital — Multi-brand &middot; KOL Ecosystem & Digital &middot; 2023–Present</div>
-        <h3 class="ct">400+ KOL ecosystem at 85–122% engagement — 50+ ppt above EU HQ benchmark</h3>
-        <div class="cl">Situation</div><p class="cp">Managing 5 premium international brands simultaneously with a single NT$20M+ A&P budget; needed measurable engagement outperformance vs. global benchmarks.</p>
-        <div class="cl">Action</div><p class="cp">Built and managed 400+ creator KOL/KOC network; applied consumer insights to A&P reallocation (↑25% digital, CPA −50%); drove 202% YOY follower growth across brands.</p>
+        <div class="cbr">SK-II Luxury Counter — Macy's NYC &middot; Luxury Retail · VIP Client Development &middot; 2012–2013</div>
+        <h3 class="ct">NT$9M at 170% of quarterly target — 450 VIP clients at NT$20K+ avg spend, 20% repurchase rate</h3>
+        <div class="cl">Situation</div><p class="cp">Launched SK-II's inaugural NYC luxury retail counter at Macy's, requiring a VIP client program built from zero in a highly competitive premium retail environment.</p>
+        <div class="cl">Action</div><p class="cp">Built VIP client program through consultative premium selling; executed cross-brand gifting and co-promotional campaigns; 200% pre-order overrun on key SKUs.</p>
         <div class="cl">Result</div>
-        <div class="cr"><span class="res">85–122% Engagement Rate</span><span class="res">CPA −50%</span><span class="res">202% YOY Follower Growth</span></div>
+        <div class="cr"><span class="res">NT$9M — 170% of Quarterly Target</span><span class="res">450 VIP Clients Built</span><span class="res">20% Repurchase Rate</span></div>
       </div>
     </div>
   </div>
@@ -197,12 +193,12 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:52px;display:flex;ali
     <h2 class="st">What I bring to William Grant & Sons.</h2>
     <div class="sr" style="margin-bottom:34px"></div>
     <div class="eg">
-      <div class="ec" tabindex="0"><div class="en">01</div><div class="et">Annual Brand Planning</div><div class="ed">Full-funnel brand strategy, annual brand plans, ATL/BTL ownership, brand guardian across all touchpoints.</div></div>
-      <div class="ec" tabindex="0"><div class="en">02</div><div class="et">P&L Budget Management (NT$20M+)</div><div class="ed">End-to-end integrated marketing campaigns; media KPI framework; ROI and ROAS tracking.</div></div>
-      <div class="ec" tabindex="0"><div class="en">03</div><div class="et">Global Brand Localization</div><div class="ed">Cross-border HQ alignment (APAC/EU/US); agency management; 5-person cross-functional team leadership.</div></div>
+      <div class="ec" tabindex="0"><div class="en">01</div><div class="et">Annual Brand Planning (IBP)</div><div class="ed">Full-funnel brand strategy, annual brand plans, ATL/BTL ownership, brand guardian across all touchpoints.</div></div>
+      <div class="ec" tabindex="0"><div class="en">02</div><div class="et">A&P Budget Management (NT$20M+)</div><div class="ed">End-to-end integrated marketing campaigns; media KPI framework; ROI and ROAS tracking.</div></div>
+      <div class="ec" tabindex="0"><div class="en">03</div><div class="et">Global Brand Strategy Localization</div><div class="ed">Cross-border HQ alignment (APAC/EU/US); agency management; 5-person cross-functional team leadership.</div></div>
       <div class="ec" tabindex="0"><div class="en">04</div><div class="et">Consumer Engagement</div><div class="ed">400+ creator ecosystem; KOL/KOC strategy; social media amplification; digital platform management.</div></div>
-      <div class="ec" tabindex="0"><div class="en">05</div><div class="et">New Product Launches</div><div class="ed">Market research, search trend analysis, consumer behavior; data-driven A&P reallocation driving CPA −50%.</div></div>
-      <div class="ec" tabindex="0"><div class="en">06</div><div class="et">Agency Management</div><div class="ed">4A PR agency direction; NT$4M+ earned media; crisis communications; brand consistency governance.</div></div>
+      <div class="ec" tabindex="0"><div class="en">05</div><div class="et">Brand Equity Building</div><div class="ed">Market research, search trend analysis, consumer behavior; data-driven A&P reallocation driving CPA −50%.</div></div>
+      <div class="ec" tabindex="0"><div class="en">06</div><div class="et">New Product Launches</div><div class="ed">4A PR agency direction; NT$4M+ earned media; crisis communications; brand consistency governance.</div></div>
       <div class="ec" tabindex="0"><div class="en">07</div><div class="et">Trade & Channel Marketing</div><div class="ed">Trade channel events; retail footfall uplift +40%; distributor & channel partner management.</div></div>
       <div class="ec" tabindex="0"><div class="en">08</div><div class="et">Product Launch</div><div class="ed">GTM planning; flagship launch campaigns; luxury retail experience (SK-II NYC, 170% of quarterly target).</div></div>
     </div>
@@ -224,11 +220,11 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:52px;display:flex;ali
 </section>
 
 <!-- ═══ VALUE MATCH ════════════════════════════════════════════════════════ -->
-<section id="value-match" style="background:var(--S);padding:0">
+<section id="value-match" style="background:var(--S);padding:0 52px">
   <div class="si" style="display:grid;grid-template-columns:1fr 1fr;min-height:320px">
     <div style="padding:64px 56px 64px 0;border-right:1px solid rgba(255,255,255,.25)">
       <div style="font-size:1.05rem;font-weight:700;letter-spacing:.03em;color:#fff;margin-bottom:20px;text-transform:uppercase">What I Bring</div>
-      <p style="font-size:1.05rem;line-height:1.85;color:rgba(255,255,255,.9);margin:0;font-weight:400">Glenfiddich and Balvenie built their Taiwan presence through earned authority — years of deliberate brand equity building, KOL credibility, and disciplined annual brand planning. I have spent 14+ years doing exactly that across premium lifestyle brands, with full P&L accountability and global HQ alignment.</p>
+      <p style="font-size:1.05rem;line-height:1.85;color:rgba(255,255,255,.9);margin:0;font-weight:400">14 years of annual brand planning, A&P management, and global-local HQ alignment across iRobot and four premium international brands in Taiwan — supported by international event marketing (2009 World Games), luxury retail VIP development (SK-II NYC), and bilingual stakeholder management capabilities built across multiple industry contexts.</p>
     </div>
     <div style="padding:64px 0 64px 56px">
       <div style="font-size:1.05rem;font-weight:700;letter-spacing:.03em;color:#fff;margin-bottom:20px;text-transform:uppercase">What William Grant & Sons Needs</div>
