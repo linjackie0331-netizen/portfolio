@@ -40,5 +40,17 @@
     "role": "MktgMgr",
     "slug": "william-grant",
     "date": "2026-05-02"
+  },
+  {
+    "company": "Tomofun",
+    "role": "APACBrandMgr",
+    "slug": "tomofun",
+    "date": "2026-05-10"
+  },
+  {
+    "company": "Cricut",
+    "role": "TWMktgMgr",
+    "slug": "cricut",
+    "date": "2026-05-10"
   }
 ]
