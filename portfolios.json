@@ -58,5 +58,11 @@
     "role": "HeadOfMktg",
     "slug": "william-grant-headofmktg",
     "date": "2026-05-20"
+  },
+  {
+    "company": "Diageo",
+    "role": "MktgDir",
+    "slug": "diageo",
+    "date": "2026-05-21"
   }
 ]
