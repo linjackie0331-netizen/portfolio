@@ -64,5 +64,11 @@
     "role": "MktgDir",
     "slug": "diageo",
     "date": "2026-05-21"
+  },
+  {
+    "company": "MoetHennessy",
+    "role": "HoCustMktg",
+    "slug": "moethennessy-hocm",
+    "date": "2026-05-23"
   }
 ]
