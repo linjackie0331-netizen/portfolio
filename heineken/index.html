@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jackie Lin 林子宥 | Brand Marketing Portfolio</title>
+<style>
+:root{
+  --I:#1A365D;--ID:#0F2240;--S:#2B5F8C;--SL:#D0E3F0;
+  --M:#F6F4F0;--MD:#E8E5E0;--B:#2D2D2D;--G:#6B7280;
+  --f:'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:var(--f);background:var(--M);color:var(--B);}
+
+/* NAV */
+nav{background:var(--I);padding:14px 40px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100;}
+nav .logo{color:#fff;font-size:16px;font-weight:700;letter-spacing:1px;}
+nav .links a{color:var(--SL);font-size:13px;text-decoration:none;margin-left:24px;}
+nav .links a:hover{color:#fff;}
+
+/* HERO */
+.hero{background:var(--I);color:#fff;padding:80px 40px 60px;text-align:center;}
+.hero h1{font-size:36px;font-weight:700;margin-bottom:12px;}
+.hero .sub{font-size:14px;color:var(--SL);letter-spacing:2px;text-transform:uppercase;margin-bottom:20px;}
+.hero p{font-size:15px;color:var(--SL);max-width:600px;margin:0 auto 32px;}
+.hbtns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+.hbtns a{padding:12px 28px;border-radius:4px;font-size:14px;font-weight:600;text-decoration:none;transition:.2s;}
+.bo{border:2px solid var(--SL);color:var(--SL);}
+.bo:hover{background:var(--SL);color:var(--I);}
+.bf{background:var(--S);color:#fff;}
+.bf:hover{background:#1e4a6e;}
+
+/* WHY */
+.why{padding:60px 40px;background:#fff;text-align:center;}
+.why h2{color:var(--I);font-size:26px;margin-bottom:36px;}
+.why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px;max-width:900px;margin:0 auto;}
+.why-card{background:var(--M);border-radius:8px;padding:24px 18px;text-align:center;}
+.why-card .num{font-size:32px;font-weight:700;color:var(--S);margin-bottom:6px;}
+.why-card .lbl{font-size:12px;color:var(--G);text-transform:uppercase;letter-spacing:1px;}
+
+/* CASES */
+.cases{padding:60px 40px;background:var(--M);}
+.cases h2{color:var(--I);font-size:26px;text-align:center;margin-bottom:40px;}
+.case-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;max-width:960px;margin:0 auto;}
+.case-card{background:#fff;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.07);}
+.case-hdr{background:var(--I);color:#fff;padding:20px 24px;}
+.case-hdr .tag{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--SL);margin-bottom:8px;}
+.case-hdr h3{font-size:16px;font-weight:700;}
+.case-body{padding:20px 24px;}
+.case-body p{font-size:13px;color:var(--G);margin-bottom:14px;}
+.metric{display:flex;gap:10px;flex-wrap:wrap;}
+.metric span{background:var(--M);border-radius:20px;padding:4px 12px;font-size:12px;font-weight:600;color:var(--S);}
+
+/* EXPERTISE */
+.expertise{padding:60px 40px;background:#fff;}
+.expertise h2{color:var(--I);font-size:26px;text-align:center;margin-bottom:40px;}
+.exp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px;max-width:900px;margin:0 auto;}
+.exp-card{border-left:4px solid var(--S);padding:16px 20px;background:var(--M);}
+.exp-card h4{color:var(--I);font-size:14px;font-weight:700;margin-bottom:10px;}
+.exp-card ul{list-style:none;padding:0;}
+.exp-card ul li{font-size:13px;color:var(--G);padding:3px 0;padding-left:12px;position:relative;}
+.exp-card ul li::before{content:"·";position:absolute;left:0;color:var(--S);}
+
+/* CTA */
+.cta{background:var(--ID);color:#fff;padding:60px 40px;text-align:center;}
+.cta h2{font-size:26px;margin-bottom:14px;}
+.cta p{color:var(--SL);margin-bottom:28px;}
+.cbtns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+
+/* FOOTER */
+footer{background:var(--I);color:var(--SL);text-align:center;padding:24px;font-size:12px;}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Jackie Lin 林子宥</div>
+  <div class="links">
+    <a href="#why">Profile</a>
+    <a href="#cases">Cases</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#cta">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="sub">Brand Stewardship · Portfolio Management · Consumer Engagement</div>
+  <h1>Jackie Lin 林子宥</h1>
+  <p>14+ years building premium consumer brands in Taiwan — translating global brand strategy into locally winning campaigns, sponsorships, and consumer engagement programs.</p>
+  <div class="hbtns">
+    <a href="https://lihi3.me/7Iv35" target="_blank" rel="noopener" class="bo">Case Study</a>
+    <a href="mailto:lin.jackie0331@gmail.com" class="bf">Get in Touch</a>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <h2>Why Jackie</h2>
+  <div class="why-grid">
+    <div class="why-card"><div class="num">14+</div><div class="lbl">Years Premium Brand Building</div></div>
+    <div class="why-card"><div class="num">NT$20M+</div><div class="lbl">A&P Budget Managed Annually</div></div>
+    <div class="why-card"><div class="num">400+</div><div class="lbl">KOL/Influencer Network</div></div>
+    <div class="why-card"><div class="num">ROAS 24×</div><div class="lbl">Peak Digital Ad Performance</div></div>
+    <div class="why-card"><div class="num">5</div><div class="lbl">Direct Reports Led</div></div>
+    <div class="why-card"><div class="num">1,200%</div><div class="lbl">Peak Partnership ROI</div></div>
+  </div>
+</section>
+
+<section class="cases" id="cases">
+  <h2>Brand Wins</h2>
+  <div class="case-grid">
+    <div class="case-card">
+      <div class="case-hdr">
+        <div class="tag">Sponsorship & Activation</div>
+        <h3>HSBC × iRobot Cross-Brand Partnership</h3>
+      </div>
+      <div class="case-body">
+        <p>Designed and led cross-brand sponsorship activation reaching HSBC's 750K cardholders via O2O campaign; drove brand equity uplift and volume growth through strategic alliance.</p>
+        <div class="metric">
+          <span>ROI +1,200%</span><span>EDM Open +23%</span><span>750K Reached</span>
+        </div>
+      </div>
+    </div>
+    <div class="case-card">
+      <div class="case-hdr">
+        <div class="tag">KOL Ecosystem & Brand Activation</div>
+        <h3>iRobot Medical KOL Program</h3>
+      </div>
+      <div class="case-body">
+        <p>Built premium brand ambassador program via 16+ healthcare KOLs; appointed 1 brand ambassador; executed thematic campaigns across ATL/BTL delivering sustained brand health growth.</p>
+        <div class="metric">
+          <span>Brand Sales +30%</span><span>ROAS 30 (Double 11)</span><span>16+ KOL HCPs</span>
+        </div>
+      </div>
+    </div>
+    <div class="case-card">
+      <div class="case-hdr">
+        <div class="tag">Global-to-Local Brand Localization</div>
+        <h3>SteamOne KOL Seeding Campaign</h3>
+      </div>
+      <div class="case-body">
+        <p>Adapted EU HQ's global toolkit for Taiwan market; A/B-tested 4+ audience segments over 9 months; localized brand positioning drove Taiwan to #1 among all HQ global markets.</p>
+        <div class="metric">
+          <span>Exposure 167%</span><span>2.4× EU Benchmark</span><span>Taiwan #1 HQ Markets</span>
+        </div>
+      </div>
+    </div>
+    <div class="case-card">
+      <div class="case-hdr">
+        <div class="tag">Joint Business Planning & Trade</div>
+        <h3>LAO XIE ZHEN Retail JBP</h3>
+      </div>
+      <div class="case-body">
+        <p>Led 2-year consecutive Joint Business Planning with key retail partner; built channel activation calendar and investment allocation framework driving off-trade volume growth.</p>
+        <div class="metric">
+          <span>Channel Sales NT$15M</span><span>B2B Sales +10% YoY</span><span>New Reach +30%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="expertise" id="expertise">
+  <h2>Core Expertise</h2>
+  <div class="exp-grid">
+    <div class="exp-card">
+      <h4>Brand Stewardship & Strategy</h4>
+      <ul>
+        <li>Global-to-local brand localization</li>
+        <li>Annual brand planning & brand plans</li>
+        <li>Sub-brand portfolio management</li>
+        <li>Brand equity & brand health tracking</li>
+        <li>Consumer insights & market research</li>
+      </ul>
+    </div>
+    <div class="exp-card">
+      <h4>Campaign & Activation Management</h4>
+      <ul>
+        <li>ATL/BTL integrated campaign governance</li>
+        <li>Sponsorship & event management</li>
+        <li>KOL/influencer ecosystem (400+)</li>
+        <li>Agency management (creative/media/activation)</li>
+        <li>ROI analysis & post-campaign reporting</li>
+      </ul>
+    </div>
+    <div class="exp-card">
+      <h4>Commercial & People Leadership</h4>
+      <ul>
+        <li>A&P budget management (NT$20M+)</li>
+        <li>Team leadership & people development (5-person)</li>
+        <li>Cross-functional stakeholder management</li>
+        <li>APAC/EU HQ matrix alignment</li>
+        <li>Revenue growth & market share management</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="cta">
+  <h2>Let's Build HEINEKEN® Taiwan Together</h2>
+  <p>14+ years of brand stewardship, consumer engagement, and sponsorship activation — ready to drive Heineken® growth.</p>
+  <div class="cbtns">
+    <a href="https://lihi3.me/7Iv35" target="_blank" rel="noopener" class="bo">Case Study</a>
+    <a href="mailto:lin.jackie0331@gmail.com" class="bf">lin.jackie0331@gmail.com</a>
+  </div>
+</section>
+
+<footer>
+  Jackie Lin 林子宥 · lin.jackie0331@gmail.com · +886-983-471-619 · Bilingual EN/ZH · Iowa State University MBA
+</footer>
+
+</body>
+</html>
