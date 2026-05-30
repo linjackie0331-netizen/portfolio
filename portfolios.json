@@ -76,5 +76,11 @@
     "role": "MktgMgr",
     "slug": "heineken",
     "date": "2026-05-28"
+  },
+  {
+    "company": "Diageo",
+    "role": "CustMktgMgr_NKA",
+    "slug": "diageo-nka",
+    "date": "2026-05-30"
   }
 ]
