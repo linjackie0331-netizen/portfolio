@@ -88,5 +88,17 @@
     "role": "DirStratPartner",
     "slug": "behealth",
     "date": "2026-07-25"
+  },
+  {
+    "company": "SuntoryHE",
+    "role": "MediaDigMgr",
+    "slug": "suntoryhe-media",
+    "date": "2026-07-26"
+  },
+  {
+    "company": "SuntoryHE",
+    "role": "BrandMgmtMgr",
+    "slug": "suntoryhe-brand",
+    "date": "2026-07-26"
   }
 ]
