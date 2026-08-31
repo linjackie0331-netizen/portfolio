@@ -100,8 +100,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:52px;display:flex;ali
   #hero::after{display:none;}.hkpis{grid-template-columns:1fr 1fr;}
   .wg{grid-template-columns:1fr;}.wc+.wc{border-left:none;border-top:1px solid var(--R);}
   .cg{grid-template-columns:1fr 1fr;gap:12px;}.eg{grid-template-columns:repeat(2,1fr);}
-  .tkg{grid-template-columns:1fr;gap:20px;}.st{margin-bottom:30px;}
-}
+  .tkg{grid-template-columns:1fr;gap:20px;}.st{margin-bottom:30px;}#value-match .si{grid-template-columns:1fr!important;}#value-match .si>div:first-child{border-right:none!important;border-bottom:1px solid rgba(255,255,255,.25)!important;padding:40px 0!important;}#value-match .si>div:last-child{padding:40px 0!important;}}
 @media(max-width:500px){
   nav{padding:0 14px;}.nav-btn{display:none;}.sec{padding:50px 15px;}
   #hero{padding:84px 15px 42px;}.hbtns{flex-direction:column;}
@@ -109,8 +108,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:52px;display:flex;ali
   .kpi{padding:12px 9px;}.kn{font-size:1.55rem;}
   .cg{grid-template-columns:1fr;}.eg{grid-template-columns:1fr 1fr;gap:2px;}
   .st{font-size:clamp(1.5rem,5.5vw,1.95rem);margin-bottom:22px;}
-  .cbtns{flex-direction:column;align-items:stretch;}.cbtns a{text-align:center;}
-}
+  .cbtns{flex-direction:column;align-items:stretch;}.cbtns a{text-align:center;}#value-match{padding:0 15px!important;}}
 @media(max-width:360px){.eg{grid-template-columns:1fr;}}
 </style>
 </head>
@@ -303,6 +301,21 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;height:52px;display:flex;ali
     </div>
   </div>
 </section>
+
+<!-- ═══ VALUE MATCH ════════════════════════════════════════════════════════ -->
+<section id="value-match" style="background:var(--S);padding:0 52px">
+  <div class="si" style="display:grid;grid-template-columns:1fr 1fr;min-height:320px">
+    <div style="padding:64px 56px 64px 0;border-right:1px solid rgba(255,255,255,.25)">
+      <div style="font-size:1.05rem;font-weight:700;letter-spacing:.03em;color:#fff;margin-bottom:20px;text-transform:uppercase">What I Bring</div>
+      <p style="font-size:1.05rem;line-height:1.85;color:rgba(255,255,255,.9);margin:0;font-weight:400">14 years of brand management with proven HCP KOL expertise (16+ medical professionals engaged, brand ambassador appointed), healthcare-adjacent consumer campaign management, and bilingual EN/ZH HQ liaison &mdash; the HCP engagement and consumer activation depth MSD HPV marketing requires.</p>
+    </div>
+    <div style="padding:64px 0 64px 56px">
+      <div style="font-size:1.05rem;font-weight:700;letter-spacing:.03em;color:#fff;margin-bottom:20px;text-transform:uppercase">What MSD Needs</div>
+      <p style="font-size:1.05rem;line-height:1.85;color:rgba(255,255,255,.9);margin:0;font-weight:400">Lead HPV marketing in Taiwan &mdash; HCP engagement strategy, consumer health campaign management, medical KOL collaboration, digital consumer activation, and cross-functional alignment with MSD&rsquo;s regional and global brand teams.</p>
+    </div>
+  </div>
+</section>
+
 
 <section id="cta" class="sec dark" style="background:var(--ID)">
   <div class="si cta-wrap">
