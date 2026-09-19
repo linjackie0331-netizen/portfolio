@@ -106,5 +106,17 @@
     "role": "SrMktgSpec",
     "slug": "zeissvisioncare",
     "date": "2026-08-08"
+  },
+  {
+    "company": "LINEPay",
+    "role": "BrandingTeamLead",
+    "slug": "linepay",
+    "date": "2026-08-31"
+  },
+  {
+    "company": "Henkel",
+    "role": "SrBrandMgr",
+    "slug": "henkel",
+    "date": "2026-09-19"
   }
 ]
