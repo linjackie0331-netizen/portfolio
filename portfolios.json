@@ -130,5 +130,17 @@
     "role": "DigMktMgr",
     "slug": "mandarinorientaltaipei",
     "date": "2026-09-20"
+  },
+  {
+    "company": "Philips",
+    "role": "SrPMOHC",
+    "slug": "philips",
+    "date": "2026-09-28"
+  },
+  {
+    "company": "LOreal",
+    "role": "SrPM3CE",
+    "slug": "loreal",
+    "date": "2026-09-28"
   }
 ]
